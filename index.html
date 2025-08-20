@@ -2,38 +2,26 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Post App</title>
+  <title>My Post App</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="container">
-    <h1>📌 My Post App</h1>
+    <h1>📝 My Post App</h1>
 
     <!-- Post Form -->
     <div class="post-form">
       <input type="text" id="title" placeholder="Enter post title">
       <textarea id="content" placeholder="Write something..."></textarea>
-      <button onclick="addPost()">Add Post</button>
+      <button onclick="addPost()">➕ Add Post</button>
     </div>
 
-    <!-- Post List -->
-    <div id="postList" class="post-list">
-      <!-- Posts will appear here -->
-    </div>
+    <h2>📌 All Posts</h2>
+    <div id="postList" class="post-list"></div>
   </div>
 
+  <!-- Supabase JS -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <script src="script.js"></script>
-</body>
-</html>
-
 </body>
 </html>
